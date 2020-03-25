@@ -1,24 +1,45 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+      <b-icon icon="wrench" animation="spin" font-scale="2" ></b-icon>
+      <img alt="Vue logo" src="./assets/django_rest_vue.png" class="img-fluid">
+      <MyHoveroi />
+      <hr>
+      <MyKalenteri />
+      <hr>
+      <MyEkavue msg="Hieno homma.  Eteenpäin!"/>
+      <hr>
+<!--      <ExampleComponent />-->
+<!--      <hr>-->
+<!--      <HelloWorld msg="Vue.js, lets do it!"/>-->
+      </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import MyEkavue from './components/MyEkavue.vue'
+import MyHoveroi from './components/MyHoveroi.vue'
+import MyKalenteri from './components/MyKalenteri.vue'
+// import ExampleComponent from './components/ExampleComponent'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+      // ExampleComponent,
+      MyHoveroi,
+      MyKalenteri,
+      MyEkavue,
+      // HelloWorld
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family:
+          Chilanka,
+          Arial,
+          TimesNewRoman
+          sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
